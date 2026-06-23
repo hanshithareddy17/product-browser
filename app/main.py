@@ -17,5 +17,7 @@ app.include_router(router)
 @app.get("/")
 def home():
     return {
-        "message": "Product Browser API"
+        "message": "Product Browser API",
+        "docs": "/docs",
+        "products": "/products"
     }
